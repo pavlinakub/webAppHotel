@@ -1,0 +1,1 @@
+Zařiďte s pomocí SASS preprocesoru a kompilátoru změnu primary Bootstrap barvy tak, aby odpovídala zvolenému barevnému schématu vašeho webu a aplikujte ji na tlačítko, které spouští modal. Použijte strukturu a provázání .sass souborů stejně jako v ukázkovém projektu, kompilátor si pak zvolte jakýkoliv. 

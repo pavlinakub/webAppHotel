@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Kubackova</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        background-color: black;
+        min-height: 50px;
+        border: 1px solid red;
+      }
+     
+      body {
+        color: aliceblue;
+        background-image: url(./image/home.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no_repeat;
+        background-size: cover;
+        text-decoration-color: white;
+       
+      }
+      table {
+        margin-top: 20px;
+      }
+      .container {
+        padding-bottom: 40px;
+      }
+      .chamonix {
+        padding-top: 150px;
+        padding-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        text-transform: bold;
+      }
+      .reservationF {
+        background-color: hsla(0, 0%, 0%, 50%);
+        padding: 20% 20%;
+        min-width: 300px;
+        border-radius: 6px;
+      }
+      h2.reservationH {
+       
+        text-align: center;
+        text-transform: capitalize;
+        text-transform: bold;
+        min-height: 30px;
+      }
+      .reservationF input {
+        border-radius: 4px;
+      }
+      .reservationF label {
+        text-align: left;
+      }
+      .reservationF button {
+        opacity: 60%;
+      }
+      div.sticky {
+        position: sticky top;
+      }
+      .column {
+        columns: 3;
+        text-shadow: rgb(14, 13, 13) 1px 0 10px;
+      }
+      .history {
+        text-align: center;
+      }
+      .historyD {
+        background-color: aqua;
+        color: black;
+      }
+    
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Martian+Mono:wght@400;800&family=Montserrat:ital,wght@1,200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@800&family=Montserrat:ital,wght@1,200&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;800&family=Montserrat:ital,wght@1,200&display=swap");
+      .odstavec1 {
+        font-family: "Matian Mono", monospace;
+        text-shadow: rgb(14, 13, 13) 1px 0 10px;
+      }
+      .odstavec2 {
+        font-family: "Caprasimo", cursive;
+        padding-top: 80px;
+        text-shadow: rgb(14, 13, 13) 1px 0 10px;
+         
+      }
+      .hora{
+         width:70%; 
+        align-items: left;
+      
+      }
+     
+      .picture2{
+        width: 100px;
+        height: 320px;
+       border-radius: 4px;
+       background-color: hsla(240, 14%, 99%, 10%);
+      }
+      .address{
+        font-size: 2rem;
+        text-shadow: rgb(14, 13, 13) 1px 0 10px;
+    
+     
+      }
+h2{
+    text-align: center;
+    padding-bottom: 40px;
+    text-shadow: rgb(14, 13, 13) 1px 0 10px;
+}
+h1{
+  text-shadow: rgb(14, 13, 13) 1px 0 10px;
+}
+
+.navbar{ margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+
+.center{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.sekce{
+  padding-top: 40px;
+  
+}
+button:hover{
+  box-shadow: 0 4px #33013d;
+}
+.card-title,.card-header{
+ 
+  text-shadow: rgb(247, 242, 242) 1px 0 10px;
+}
+.carusal-items{
+  height: 200px;
+}
+/* .card-image{
+  width: 150;
+} */
+.addressIcon{
+  height: 30px;
+  width: 30px;
+  padding-right: 10px;
+}
+</style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#Home">Home</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#history">History </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#PriceList">PriceList</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contacts">Contacts</a>
+              </li>
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0"> -->
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            <!-- </form> -->
+          </div>
+        </nav>
+      </div>
+   
+    <!-- navbar -->
+<dim id="Home"></dim>
+    <div class="container">
+      <div class="row-12">
+        <div class="col">
+          <h1 class="chamonix">Hotel Chamonix</h1>
+          <div id="home"></div>
+        </div>
+      </div>
+    </div>
+<!-- formular -->
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <form class="reservationF">
+            <h2 class="reservationH">Reservation</h2>
+            <div class="input-group mb-3">
+              <label for="fullname" class="fullnameL"
+                >Fullname:<br />
+                <input
+                  type="text"
+                  class="fullname"
+                  name="fullname"
+                  placeholder="Jan" />
+                <input
+                  type="text"
+                  class="fullname"
+                  name="fullname"
+                  placeholder="Novak"
+              /></label>
+            </div>
+            <div class="input-group mb-3">
+              <label for="email" class="email"
+                >Email:<br/>
+                <input
+                  type="email"
+                  class="email"
+                  name="email"
+                  placeholder="@"
+                />
+              </label>
+            </div>
+            <div class="input-group mb-3">
+              <label for="tel" class="telL"
+                >Mobil:<br />+420
+                <input
+                  type="text"
+                  name="tel"
+                  class="tel"
+                  placeholder="000 000 000"
+                />
+              </label>
+            </div>
+            <div class="input-group mb-3">
+              <label for="pocet" class="pocetL"
+                >Number of persons:<br />
+                <select name="pocet" id="pocetOsob">
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
+                  <option value="2">3</option>
+                  <option value="3">4</option>
+                  <option value="4">5</option>
+                  <option value="5">6</option>
+                </select>
+              </label>
+            </div>
+            <div class="input-group mb-3">
+              <label for="bed" class="bedL"
+                >Number of beds:<br />
+                <select name="bed" id="bed1">
+                  <option value="0">0</option>
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </label>
+            </div>
+            <div class="input-group mb-3">
+              <label for="date1" class="dateL"
+                >Arrival: <br />
+                <input type="date" name="date1" class="date" />
+              </label>
+              <label for="date1" class="dateL"
+                >Departure: <br />
+                <input type="date" name="date1" class="date" />
+              </label>
+            </div>
+            <div class="input-group mb-3">
+              <label for="terms">
+                <input
+                  type="checkbox"
+                  role="switch"
+                  id="terms"
+                  name="terms"
+                  checked
+                />
+                Agree with conditions</label
+              >
+            </div>
+            <div class="input-group mb-3">
+              <button type="button" class="btn btn-primary">Comfirm</button>
+              <button type="button" class="btn btn-danger video-btn" data-bs-toggle="modal"  data-bs-target="#myModal" >
+               Virtual tour
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- history -->
+    <div class="sekce" id="history"><h2>History</h2></div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="history">
+           
+            <div class="row">
+                <div class="col md-6 col-lg-4">
+              <p class="odstavec1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Laboriosam expedita labore, recusandae minima laborum cumque?
+                Id, voluptates iusto? Consectetur quisquam eum provident
+                temporibus ullam mollitia, aperiam inventore dolore recusandae
+                quae, ad cumque! Illo, in dolor tempora architecto alias nostrum
+                quidem voluptatibus pariatur corporis totam eaque repudiandae
+                odio molestiae eius a porro reiciendis similique, quae beatae!
+                Reprehenderit nemo vitae id dicta.
+              </p>
+              </div>
+                <div class="col md-6 col-lg-4">
+              <p class="ostavec2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique eveniet tempore mollitia fugiat? Nemo hic explicabo
+                quo dolores repudiandae illo vitae facere porro libero at nobis
+                placeat vero, ducimus cupiditate fuga adipisci, ipsa corporis
+                facilis, illum accusamus assumenda fugiat iste repellendus. Vero
+                deserunt nam distinctio dolores! Iste illo unde quam quos ab
+                dolorem nam? Fugiat eligendi similique minus dicta consequuntur!
+              </p>
+                </div>
+                
+                    <div class="col-md- col-lg-5 col-xl-4 p-2 d-flex align-items-stretch">
+              <source  media="(min-width:1200px)"
+              srcset="./image/hora.jpg">
+                  
+                    <img src="./image/cottage.jpg" alt="hora"  class="hora mx-auto d-none d-md-block"/>
+                 
+              </source>
+                    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- cenik -->
+    <div class="sekce" id="PriceList"><h2>Pricelist</h2></div>
+        <div class="container text-center mt-5 py-3">
+          <div class="row">
+            <div class="col-md-6 col-lg-3 p-1">
+              <div
+                class="card h-100"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="Tooltip"
+              >
+                <img src="./image/singleBed.jpg" alt="" class="card-image-top h-50" />
+                <div class="card-body">
+                  <h2 class="card-title">Single room</h2>
+                  <div class="card-header">Information</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                    dolorum.
+                  </p>
+                  <hr />
+                  <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nights</th>
+                            <th scope="col">6 people</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>$450</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>$600</td>
+                        </tr>
+                    </tbody>
+                </table>
+                  <a href="" class="btn btn-lg btn-outline-primary">Book!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-1">
+              <div
+                class="card h-100"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="Tooltip"
+              >
+                <img src="./image/doubleBed.jpg" alt="" class="card-image-top h-50" />
+                <div class="card-body">
+                  <h2 class="card-title">Double room</h2>
+                  <div class="card-header">Information</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                    dolorum.
+                  </p>
+                  <hr />
+                  <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nights</th>
+                            <th scope="col">6 people</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>$450</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>$600</td>
+                        </tr>
+                    </tbody>
+                </table>
+                  <a href="" class="btn btn-lg btn-outline-primary">Book!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-1">
+              <div
+                class="card h-100"
+                data-toggle="popover"
+                title="Popover title"
+                data-content="And here's some amazing content. It's very engaging. Right?"
+              >
+                <img src="./image/triple.jpg" alt="" class="card-image-top h-50" />
+                <div class="card-body">
+                  <h2 class="card-title">Deluxe triple</h2>
+                  <div class="card-header">Information</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                    dolorum.
+                  </p>
+                  <hr />
+                  <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nights</th>
+                            <th scope="col">6 people</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>$450</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>$600</td>
+                        </tr>
+                    </tbody>
+                </table>
+                  <a href="" class="btn btn-lg btn-outline-primary">Book!</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 p-1">
+              <div
+                class="card h-100"
+                data-toggle="popover"
+                title="Popover title"
+                data-content="And here's some amazing content. It's very engaging. Right?"
+              >
+                <img src="./image/4bed.jpg" alt="" class="card-image-top h-50" />
+                <div class="card-body">
+                  <h2 class="card-title">Quadruple room</h2>
+                  <div class="card-header">Information</div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                    dolorum.
+                  </p>
+                  <hr />
+   
+                  <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nights</th>
+                            <th scope="col">6 people</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>$450</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>$600</td>
+                        </tr>
+                    </tbody>
+                </table>
+                  <a href="" class="btn btn-lg btn-outline-primary">Book!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+<!-- gallery -->
+<div class="sekce" id="Gallery"><h2>Gallery</h2></div>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./image/montBlanc.jpg" class="d-block w-100 "  alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/nature.jpg" class="d-block w-100 " alt=".">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/train.jpg" class="d-block w-100 " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/kolo2.jpeg" class="d-block w-100 " alt=".">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/vyhled.jpg" class="d-block w-100 " alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/ski.jpg" class="d-block w-100 " alt=".">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/ledovec.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./image/ferrata.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+        </div>
+        </div>
+    
+            <!-- Contacts -->
+    <div class="sekce" id="Contacts"><h2>Contacts</h2></div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d177605.47543102282!2d6.929096199999999!3d45.92958984999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47894c062dfe2ee7%3A0x408ab2ae4baa380!2sChamonix-Mont-Blanc%2C%20Francie!5e0!3m2!1scs!2scz!4v1689714129907!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
+        <div class="col offset-1">
+            <div class="picture2">
+                <img src="./image/square-instagram.svg" alt="instagram"  />
+                <img src="./image/square-facebook.svg" alt="facebook"  />
+                <img src="./image/square-twitter (1).svg" alt="twitter"  />
+              </div>
+        </div>
+        <div class="col address">
+         
+            <h3 > <img src="./image/chataIcon.svg" alt="icon" class="addressIcon"  /></i>Adress:<br /></h3>
+        <address>ulice 50<br />
+                svycarsko<br />
+                 558900
+        </address>
+      </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      
+      <div class="modal-body">
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" class="close"></span>
+        </button>        
+        <!-- 16:9 aspect ratio -->
+<div class="ratio ratio-16x9">
+  <!-- <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe> -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3OGI9XJT4WM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</div> 
+  
+  
+  
+</div>
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
